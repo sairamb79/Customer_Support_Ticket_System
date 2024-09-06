@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /*margin: 0;*/
+}
+
+.container {
+    background-color: rgb(254, 254, 254);
+    /*padding: 80px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(107, 102, 102);
+    width: 355px;
+}
+
+.signup-form {
+    text-align: center;
+}
+
+.signup-form h4 {
+    margin-bottom: 30px;
+    margin-right: 40px;
+    color: #333;
+    text-align: left;
+    font-size: 1.5em;  /* Adjusted font size */
+    margin-right: 20px;  /* Move the heading 20px to the right */
+    white-space: nowrap;  /* Prevent line breaks */
+    margin-right: 200px;
+}
+
+.form-group {
+    margin-bottom: 19px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 13px;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+    background-color: #96bbc438;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4179b5;
+    color: white;
+    border: none;
+    padding: 12px 123px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.login-form button {
+    background-color: #4179b5;
+    color: white;
+    border: none;
+    padding: 12px 160px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for links and paragraphs */
+.login-form p {
+    margin-top: 10px; /* Margin above paragraphs */
+    font-size: 14px; /* Font size */
+}
+
+.login-form a {
+    color: #1664b8; /* Blue link color */
+    text-decoration: none; /* No underline */
+    margin-left: 5px; /* Space between links */
+}
+
+.signup-form a {
+    color: #1664b8; /* Blue link color */
+    text-decoration: none; /* No underline */
+    margin-left: 5px; /* Space between links */
+}
+
+.login-form a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; /* Add this line to make the text bold */
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

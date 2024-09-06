@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Service Staff</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div id="dashboard" class="dashboard">
+    <div class="sidebar">
+        <ul>
+            <li><a href="admin-dashboard.html">Manage Service Staff</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-title">Create Service Staff</div>
+        <form id="create-service-staff-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Create Service Staff</button>
+        </form>
+    </div>
+</div>
+<script src="create-service-staff.js"></script>
+</body>
+</html>

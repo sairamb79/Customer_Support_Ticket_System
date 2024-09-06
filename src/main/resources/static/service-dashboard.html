@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Staff Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div id="dashboard" class="dashboard">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+            <li><a href="#"><i class="fas fa-ticket-alt"></i> <span>Tickets</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-title">Service Staff Dashboard</div>
+        <div class="ticket-summary">
+            <h2>All Tickets</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Created At</th>
+                    <th>Last Updated</th>
+                </tr>
+                </thead>
+                <tbody id="tickets-table-body">
+                <!-- Tickets will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="service-dashboard.js"></script>
+</body>
+</html>

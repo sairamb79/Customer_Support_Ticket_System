@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Staff Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div id="dashboard" class="dashboard">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+<!--            <li><a href="#"><i class="fas fa-ticket-alt"></i> <span>Tickets</span></a></li>-->
+<!--            <li><a href="#"><i class="fas fa-book"></i> <span>Knowledge Base</span></a></li>-->
+<!--            <li><a href="#"><i class="fas fa-users"></i> <span>Community</span></a></li>-->
+<!--            <li><a href="#"><i class="fas fa-chart-bar"></i> <span>Reports</span></a></li>-->
+<!--            <li><a href="messaging.html"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>-->
+        </ul>
+
+        <ul>
+            <li><a href="#" id="logout-btn" class="logout-btn">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-title">All Tickets</div>
+        <div class="ticket-summary">
+<!--            <h2>All Tickets</h2>-->
+            <table id="tickets-table">
+                <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Created At</th>
+                    <th>Last Updated</th>
+                    <th>Response</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Tickets will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="view-all-tickets.js"></script>
+</body>
+</html>

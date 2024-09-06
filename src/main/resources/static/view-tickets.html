@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Tickets</title>
+        <link rel="stylesheet" href="view-tickets.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body class="main">
+        <div class="sidebar">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                <li><a href="view-tickets.html"><i class="fas fa-ticket-alt"></i> <span>Tickets</span></a></li>
+<!--                <li><a href="messaging.html"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>-->
+            </ul>
+
+            <ul>
+                <li><a href="create-ticket.html" class="new-ticket-btn">New Ticket</a></li>
+                <li><a href="#" id="logout-btn" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="title">Your Tickets</div>
+            <div class="container">
+<!--                <h2>Your Tickets</h2>-->
+                <table id="ticketsTable">
+                    <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Created At</th>
+                        <th>Last Updated</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Tickets will be populated here by JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal for displaying ticket response -->
+            <div id="responseModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ticket Response</h2>
+                    <p id="responseText"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="view-tickets.js"></script>
+    </body>
+</html>

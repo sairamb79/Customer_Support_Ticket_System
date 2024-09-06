@@ -1,0 +1,159 @@
+/* Add your existing styles here */
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.responded {
+    background-color: #d1ffd1;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    margin: 0 auto; /* Center the main content */
+    max-width: 1200px; /* Add a max-width to constrain the content */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    /*padding: 10px;*/
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+.sidebar .new-ticket-btn {
+    background-color: #51DAFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .new-ticket-btn:hover {
+    background-color: #09A5CF;
+}
+
+.sidebar .logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; /* Add this line to make the text bold */
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ticketsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+#ticketsTable thead {
+    background-color: #f2f2f2;
+}
+
+#ticketsTable th, #ticketsTable td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#ticketsTable th {
+    background-color: #34495e;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#ticketsTable tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+#ticketsTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#ticketsTable td {
+    color: #333333;
+}

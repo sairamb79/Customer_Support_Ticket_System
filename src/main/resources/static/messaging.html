@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Messaging</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body class="main">
+        <div class="sidebar">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                <li><a href="view-tickets.html"><i class="fas fa-ticket-alt"></i> <span>Tickets</span></a></li>
+                <li><a href="messaging.html"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>
+            </ul>
+
+            <ul>
+                <li><a href="create-ticket.html" class="new-ticket-btn">New Ticket</a></li>
+                <li><a href="#" id="logout-btn" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="title">Messages</div>
+            <div id="messaging" class="messaging">
+                <!--<h1>Messages</h1>-->
+                <div id="message-container"></div>
+                <form id="sendMessageForm">
+                    <textarea id="messageContent" placeholder="Type your message here..."></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <script src="messaging.js"></script>
+    </body>
+</html>
